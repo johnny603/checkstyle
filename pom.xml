@@ -199,7 +199,7 @@
 
   <properties>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <surefire.options />
+    <surefire.options/>
     <projectVersion>${project.version}</projectVersion>
     <antlr4.version>4.13.2</antlr4.version>
     <maven.site.plugin.version>3.21.0</maven.site.plugin.version>
@@ -234,7 +234,7 @@
     <junit.version>6.0.0</junit.version>
     <forbiddenapis.version>3.9</forbiddenapis.version>
     <json-schema-validator.version>1.2.0</json-schema-validator.version>
-    <checkerframework.version>3.51.1</checkerframework.version>
+    <checkerframework.version>3.52.0</checkerframework.version>
     <error-prone.version>2.42.0</error-prone.version>
     <error-prone-support.version>0.25.0</error-prone-support.version>
     <doxia.version>1.12.0</doxia.version>
@@ -670,7 +670,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute />
+                    <execute/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -698,7 +698,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -711,7 +711,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute />
+                    <execute/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -1710,10 +1710,10 @@
             </goals>
             <configuration>
               <target>
-                <property name="mvn.project.build.directory" value="${project.build.directory}" />
-                <property name="mvn.runtime_classpath" refid="maven.runtime.classpath" />
-                <property name="mvn.java.version" value="${java.version}" />
-                <ant antfile="config/ant-phase-verify.xml" />
+                <property name="mvn.project.build.directory" value="${project.build.directory}"/>
+                <property name="mvn.runtime_classpath" refid="maven.runtime.classpath"/>
+                <property name="mvn.java.version" value="${java.version}"/>
+                <ant antfile="config/ant-phase-verify.xml"/>
               </target>
             </configuration>
           </execution>
@@ -2405,8 +2405,8 @@
                 </goals>
                 <configuration>
                   <target>
-                    <property name="mvn.project.build.directory" value="${project.build.directory}" />
-                    <ant antfile="config/ant-phase-verify-sevntu.xml" />
+                    <property name="mvn.project.build.directory" value="${project.build.directory}"/>
+                    <ant antfile="config/ant-phase-verify-sevntu.xml"/>
                   </target>
                 </configuration>
               </execution>
@@ -5281,7 +5281,7 @@
               <executable>.ci/eclipse-compiler-javac.sh</executable>
               <classpathScope>test</classpathScope>
               <arguments>
-                <classpath />
+                <classpath/>
                 <argument>${next.java.version}</argument>
               </arguments>
             </configuration>
