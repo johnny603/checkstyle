@@ -199,7 +199,7 @@
 
   <properties>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <surefire.options />
+    <surefire.options/>
     <projectVersion>${project.version}</projectVersion>
     <antlr4.version>4.13.2</antlr4.version>
     <maven.site.plugin.version>3.21.0</maven.site.plugin.version>
@@ -236,7 +236,7 @@
     <checkerframework.version>3.52.1</checkerframework.version>
     <error-prone.version>2.45.0</error-prone.version>
     <error-prone-support.version>0.27.0</error-prone-support.version>
-    <doxia.version>1.12.0</doxia.version>
+    <doxia.version>2.0.0</doxia.version>
     <error-prone.configuration-args>
       -Xep:AmbiguousJsonCreator:ERROR
       -Xep:AssertJNullnessAssertion:ERROR
@@ -609,8 +609,8 @@
           <version>3.1.0</version>
           <configuration>
             <java>
-              <forbidWildcardImports />
-              <removeUnusedImports />
+              <forbidWildcardImports/>
+              <removeUnusedImports/>
               <importOrder>
                 <file>config/spotless/import.order</file>
               </importOrder>
@@ -711,7 +711,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute />
+                    <execute/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -739,7 +739,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -752,7 +752,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute />
+                    <execute/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -1775,10 +1775,10 @@
             </goals>
             <configuration>
               <target>
-                <property name="mvn.project.build.directory" value="${project.build.directory}" />
-                <property name="mvn.runtime_classpath" refid="maven.runtime.classpath" />
-                <property name="mvn.java.version" value="${java.version}" />
-                <ant antfile="config/ant-phase-verify.xml" />
+                <property name="mvn.project.build.directory" value="${project.build.directory}"/>
+                <property name="mvn.runtime_classpath" refid="maven.runtime.classpath"/>
+                <property name="mvn.java.version" value="${java.version}"/>
+                <ant antfile="config/ant-phase-verify.xml"/>
               </target>
             </configuration>
           </execution>
@@ -2472,8 +2472,8 @@
                 </goals>
                 <configuration>
                   <target>
-                    <property name="mvn.project.build.directory" value="${project.build.directory}" />
-                    <ant antfile="config/ant-phase-verify-sevntu.xml" />
+                    <property name="mvn.project.build.directory" value="${project.build.directory}"/>
+                    <ant antfile="config/ant-phase-verify-sevntu.xml"/>
                   </target>
                 </configuration>
               </execution>
@@ -5297,7 +5297,7 @@
               <executable>.ci/eclipse-compiler-javac.sh</executable>
               <classpathScope>test</classpathScope>
               <arguments>
-                <classpath />
+                <classpath/>
                 <argument>${next.java.version}</argument>
               </arguments>
             </configuration>
